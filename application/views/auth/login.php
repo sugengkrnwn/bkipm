@@ -69,10 +69,8 @@
                 <div class="row" style="margin-top: 20px;">
                     <div class="col-xs-12">
                         <div class="callout callout-info">
-                            <h4>Sugeng Kurniawan (085712279447)</h4>
+                            <h5>Sugeng Kurniawan (085712279447)</h5>
 <!--                             <h4>Level Super Admin</h4>
-
-
                         </div>
                     </div>
 
