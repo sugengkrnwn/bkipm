@@ -29,7 +29,8 @@
         <td>Hari</td><td><?php echo $laporan->hari?></td><br>
         </tr>
         <tr>
-        <td>Tanggal</td><td><?php echo $laporan->tanggal?></td><br>
+<!--                         <td><#?php echo $laporan->tanggal?></td> -->
+        <td>Tanggal</td><td><?php echo date('d-m-Y', strtotime($laporan->tanggal));?></td><br>
         </tr>
         <tr>
         <td>Tempat</td><td><?php echo $laporan->tempat?></td><br>
@@ -55,7 +56,7 @@
 
             <td style="width: 50%" class="text-center" ><br>Pelaksana Tugas<br><br><br><br><br><br><br>
                 <?php echo $laporan->nama_1 ?></td>
-            <td style="width: 50%" class="text-center" >Semarang,<?php echo $laporan->tanggal?><br>Pelaksana Tugas<br><br><br><br><br><br><br><?php echo $laporan->nama_2?></td>
+            <td style="width: 50%" class="text-center" >Semarang,<?php echo date('d-m-Y', strtotime($laporan->tanggal));?><br>Pelaksana Tugas<br><br><br><br><br><br><br><?php echo $laporan->nama_2?></td>
             
           </tr>
         </table>

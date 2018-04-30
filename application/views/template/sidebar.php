@@ -13,7 +13,7 @@
     <!-- sidebar menu: : style can be found in sidebar.less -->
     <ul class="sidebar-menu" data-widget="tree">
        
-        
+<li><a href="<?php echo base_url('welcome');?>"><i class="fa fa-home"></i> <span>Home Page</span></a></li>
         <?php
         // chek settingan tampilan menu
         $setting = $this->db->get_where('tbl_setting',array('id_setting'=>1))->row_array();

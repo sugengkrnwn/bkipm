@@ -30,7 +30,7 @@
             </tr>
 
                 <tr>
-         <td>Tanggal SPL</td><td><?php echo date('d F Y', strtotime($suratlembur['tgl_skpl']));?></td>
+         <td>Tanggal SPL</td><td><?php echo date('d-m-Y', strtotime($suratlembur['tgl_skpl']));?></td>
         <td rowspan="2">Lembur Waktu</td><td rowspan="2"><?php echo $suratlembur['lembur_waktu'] ?></td>
         <tr>
         <td>Seksi</td><td><?php echo $suratlembur['seksi'] ?></td><tr>
@@ -49,7 +49,7 @@
             <td>berakhir</td>
         <tr>
 <!--             <td><#?php echo  ++$start ?></td> -->
-            <td><?php echo date('d F Y', strtotime($suratlembur['tgl_lembur']));?></td>
+            <td><?php echo date('d-m-Y', strtotime($suratlembur['tgl_lembur']));?></td>
             <td><?php echo $suratlembur['nama_pg1'] ?> <?php echo $suratlembur['nip_pg1'] ?> <br>
                 <?php echo $suratlembur['nama_pg2']  ?> <?php echo $suratlembur['nip_pg2'] ?><br>
                 <?php echo $suratlembur['nama_pg3']  ?> <?php echo $suratlembur['nip_pg3'] ?><br>

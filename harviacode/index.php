@@ -88,7 +88,7 @@ require_once 'core/process.php';
                                                 </label>
                     <?php // echo file_exists('../application/third_party/mpdf/mpdf.php') ? '' : '<small class="text-danger">mpdf required, download <a href="http://harviacode.com">here</a></small>'; ?>
                                             </div>
-                                        </div>-->
+                                        </div>
 
 
                     <div class="form-group">

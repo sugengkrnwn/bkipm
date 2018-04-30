@@ -5,7 +5,7 @@
                 <div class="box box-warning box-solid">
     
                     <div class="box-header">
-                        <h3 class="box-title">KELOLA DATA TBL_LAPORAN_LEMBUR</h3>
+                        <h3 class="box-title">KELOLA DATA LAPORAN LEMBUR</h3>
                     </div>
         
         <div class="box-body">
@@ -39,6 +39,17 @@
         <script src="<?php echo base_url('assets/js/jquery-1.11.2.min.js') ?>"></script>
         <script src="<?php echo base_url('assets/datatables/jquery.dataTables.js') ?>"></script>
         <script src="<?php echo base_url('assets/datatables/dataTables.bootstrap.js') ?>"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('#tanggal').datepicker({
+                 //merubah format tanggal datepicker ke dd-mm-yyyy
+                    format: "dd-mm-yyyy",
+                    //aktifkan kode dibawah untuk melihat perbedaanya, disable baris perintah diatasa
+                    //format: "dd-mm-yyyy",
+                    autoclose: true
+                });
+            });
+        </script>
         <script type="text/javascript">
             $(document).ready(function() {
                 $.fn.dataTableExt.oApi.fnPagingInfo = function(oSettings)
