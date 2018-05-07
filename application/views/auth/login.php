@@ -34,6 +34,7 @@
             </div>
             <!-- /.login-logo -->
             <div class="login-box-body">
+                
                 <?php
                 $status_login = $this->session->userdata('status_login');
                 if (empty($status_login)) {
@@ -42,8 +43,9 @@
                     $message = $status_login;
                 }
                 ?>
+                
                 <p class="login-box-msg"><?php echo $message; ?></p>
-
+                
                 <!--<form action="<?php echo base_url(); ?>/adminlte/index2.html" method="post">-->
                 <?php echo form_open('auth/cheklogin'); ?>
                 <div class="form-group has-feedback">
@@ -63,18 +65,19 @@
                     </div> -->
                 </div>
                 <!-- /.col -->
-
-
-                <!-- /.col -->
-                <div class="row" style="margin-top: 20px;">
+                <!-- <div class="row" style="margin-top: 20px;">
                     <div class="col-xs-12">
-                        <div class="callout callout-info">
-                            <h5>Sugeng Kurniawan (085712279447)</h5>
-<!--                             <h4>Level Super Admin</h4>
+                        <div class="callout callout-info"> -->
+                            <!-- <h5>Sugeng Kurniawan (085712279447)</h5> -->
+<!--                             <h4>Level Super Admin</h4>-->
+                        <!-- <h4 align="center">Sistem Surat</h4>
                         </div>
                     </div>
 
-                </div>
+                </div> -->
+
+                <!-- /.col -->
+               
                 </form>
 
 
