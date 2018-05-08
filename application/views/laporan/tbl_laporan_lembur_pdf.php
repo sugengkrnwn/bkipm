@@ -16,36 +16,33 @@
         </style>
     </head>
     <body>
-        <?php
-            foreach ($tbl_laporan_lembur_data as $laporan)
-            {
-                ?>
+
      <h3 align="center"><u> LAPORAN KERJA LEMBUR</u></h3>
      <br><br><br><br>
         <table class="word-table" style="margin-bottom: 10px">
             <tr>
-         <td>Nama Pelaksana Lembur</td><td><?php echo $laporan->nama_1 ?><br><?php echo $laporan->nama_2 ?></td><br></tr>
+         <td>Nama Pelaksana Lembur</td><td><?php echo $laporanlembur['nama_1'] ?><br><?php echo $laporanlembur['nama_2'] ?></td><br></tr>
          <tr>
-        <td>Hari</td><td><?php echo $laporan->hari?></td><br>
+        <td>Hari</td><td><?php echo $laporanlembur['hari'] ?></td><br>
         </tr>
         <tr>
 <!--                         <td><#?php echo $laporan->tanggal?></td> -->
-        <td>Tanggal</td><td><?php echo date('d-m-Y', strtotime($laporan->tanggal));?></td><br>
+        <td>Tanggal</td><td><?php echo date('d-m-Y', strtotime($laporanlembur['tanggal']));?></td><br>
         </tr>
         <tr>
-        <td>Tempat</td><td><?php echo $laporan->tempat?></td><br>
+        <td>Tempat</td><td><?php echo $laporanlembur['tempat']?></td><br>
         </tr>
         <tr>
-        <td>Jam Awal</td><td><?php echo $laporan->jam_awal?></td><br>
+        <td>Jam Awal</td><td><?php echo $laporanlembur['jam_awal']?></td><br>
         </tr>
         <tr>
-        <td>Jam Akhir</td><td><?php echo $laporan->jam_akhir?></td><br>
+        <td>Jam Akhir</td><td><?php echo $laporanlembur['jam_akhir']?></td><br>
         </tr>
         <tr>
         <td colspan="2" align="center">Uraian Kegiatan Yang Dilakukan</td>
         </tr>
         <tr>
-        <td colspan="2"><?php echo $laporan->uraian?></td><br>
+        <td colspan="2"><?php echo $laporanlembur['uraian']?></td><br>
         </tr>
         <div class="row">
       </table>
@@ -55,8 +52,8 @@
           <tr>
 
             <td style="width: 50%" class="text-center" ><br>Pelaksana Tugas<br><br><br><br><br><br><br>
-                <?php echo $laporan->nama_1 ?></td>
-            <td style="width: 50%" class="text-center" >Semarang,<?php echo date('d-m-Y', strtotime($laporan->tanggal));?><br>Pelaksana Tugas<br><br><br><br><br><br><br><?php echo $laporan->nama_2?></td>
+                <?php echo $laporanlembur['nama_1'] ?></td>
+            <td style="width: 50%" class="text-center" >Semarang,<?php echo date('d-m-Y', strtotime($laporanlembur['tanggal']));?><br>Pelaksana Tugas<br><br><br><br><br><br><br><?php echo $laporanlembur['nama_2']?></td>
             
           </tr>
         </table>
@@ -73,9 +70,7 @@
                 <!-- <tr>
 
                 </tr> -->
-                <?php
-            }
-            ?>
+              
 
     </body>
 </html>

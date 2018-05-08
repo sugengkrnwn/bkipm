@@ -63,7 +63,7 @@
                     <!-- <div class="col-xs-6">
                         <#?php echo anchor('#', '<i class="fa fa-eye-slash" aria-hidden="true"></i> Lupa Password', array('class' => 'btn btn-primary btn-block btn-flat')); ?>
                     </div> -->
-                </div>
+                </div> 
                 <!-- /.col -->
                 <!-- <div class="row" style="margin-top: 20px;">
                     <div class="col-xs-12">

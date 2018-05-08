@@ -219,19 +219,31 @@ class Laporan extends CI_Controller
         exit();
     }
 
-    function pdf()
-    {
-        $data = array(
-            'tbl_laporan_lembur_data' => $this->Tbl_laporan_lembur_model->get_all(),
-            'start' => 0
-        );
+    // function pdf()
+    // {
+    //     $data = array(
+    //         'tbl_laporan_lembur_data' => $this->Tbl_laporan_lembur_model->get_all(),
+    //         'start' => 0
+    //     );
         
+    //     ini_set('memory_limit', '32M');
+    //     $html = $this->load->view('laporan/tbl_laporan_lembur_pdf', $data, true);
+    //     $this->load->library('pdf');
+    //     $pdf = $this->pdf->load();
+    //     $pdf->WriteHTML($html);
+    //     $pdf->Output('tbl_laporan_lembur.pdf', 'I'); 
+    // }
+    function pdf($id)
+    {
+       $id            = $this->uri->segment(3);
+       $data['laporanlembur'] = $this->db->get_where('tbl_laporan_lembur', array('id' => $id))->row_array(); 
         ini_set('memory_limit', '32M');
         $html = $this->load->view('laporan/tbl_laporan_lembur_pdf', $data, true);
         $this->load->library('pdf');
         $pdf = $this->pdf->load();
         $pdf->WriteHTML($html);
-        $pdf->Output('tbl_laporan_lembur.pdf', 'I'); 
+        $pdf->Output('tbl_laporan_lembur.pdf','I'); 
+
     }
     function pdf_back()
     {
