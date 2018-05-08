@@ -58,19 +58,7 @@
           </tr>
         </table>
         </div>
-<!-- 		<th>Nama 1</th>
-		<th>Nama 2</th>
-		<th>Hari</th>
-		<th>Tanggal</th>
-		<th>Tempat</th>
-		<th>Jam Awal</th>
-		<th>Jam Akhir</th>
-		<th>Uraian</th> -->
-		
-                <!-- <tr>
 
-                </tr> -->
-              
 
     </body>
 </html>
